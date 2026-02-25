@@ -1,9 +1,12 @@
 name: Test Schedule
 
 on:
+  push:
+    branches: [ "main" ]
   schedule:
     - cron: "* * * * *"
   workflow_dispatch:
+
 
 jobs:
   test:
